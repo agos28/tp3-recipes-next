@@ -1,14 +1,20 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/image'
 
-const Card = ({ id, image, name }) => {
+export default function hero() {
+
   return (
-    <article className='w-72 mt-10'>
-      <Image src={image} width={200} height={200} alt={name} className='w-full h-40 object-cover' />
+    <section className="h-96 flex items-end bg-cover bg-center inset-shadow-sm relative">
 
+      <Image
+        src="/hero-bg.jpg"
+        alt="hero"
+        fill
+        className="object-cover object-bottom"
+      />
 
-    </article>
-  );
-};
+      <h3 className=" text-6xl pl-6 text-[#90a955] mb-20 absolute ">Recipes</h3>
+      <h2 className="uppercase  text-8xl pl-6 text-white mb-6">Made easy</h2>
 
-export default Card;
+    </section>
+  )
+}
