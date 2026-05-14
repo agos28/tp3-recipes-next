@@ -5,13 +5,13 @@ import { bowlbyOne, mrDafoe, stackSansText } from '@/lib/fonts';
 export default function hero() {
 
   return (
-    <section className="h-105 flex items-end bg-cover bg-center inset-shadow-sm relative">
+    <section className="h-105 flex items-end inset-shadow-sm relative">
 
       <Image
-        src="/hero-bg1.jpg"
+        src="/bg-5.jpg"
         alt="hero"
         fill
-        className="object-cover brightness-75"
+        className="object-cover brightness-50"
       />
 
       <h3 className={`${mrDafoe.className} text-6xl pl-6 text-[#90a955] mb-24 absolute z-20`}>Recipes</h3>
